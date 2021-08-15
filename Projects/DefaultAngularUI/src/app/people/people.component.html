@@ -1,0 +1,81 @@
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/cu_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    E6156: Cloud Computing
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li id="Home" [ngClass]="getClass('Home')">
+        <a  class="nav-link" href="#">Home</a>
+      </li>
+      <li id="People"  [ngClass]="getClass('People')">
+        <a  class="nav-link" href="/people">People</a>
+      </li>
+      <li id="Course"  [ngClass]="navBar.getClass('Course')">
+        <a  class="nav-link" href="/courses">Courses</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+-->
+
+<div class="container" style="max-width: 550px">
+  <h2 class="text-center mb-5">Angular Login with Google</h2>
+
+  <div *ngIf="isLoggedin() === false">
+    <div>
+      <button type="button" (click)="loginWithGoogle()" class="btn btn-danger">Login with Google</button>
+    </div>
+  </div>
+
+  <div *ngIf="isLoggedin() === true">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" class="form-control" [value]="socialUser.firstName" id="firstname" readonly>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" class="form-control" [value]="socialUser.lastName" id="lastname" readonly>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" [value]="socialUser.email" id="email" readonly>
+    </div>
+
+    <button type="button" (click)="logOut()" class="btn btn-primary">Log Out</button>
+  </div>
+</div>
+<div class="jumbotron">
+  <!--
+  <h1 class="display-4">COMSE6156_001_2021_3 - TOPICS IN SOFTWARE ENGINEERING: <br>Cloud Computing
+  -->
+  <h1>COMSE6156_001_2021_3 - TOPICS IN SOFTWARE ENGINEERING: <br>Cloud Computing
+  </h1>
+</div>
+<div class="container-fluid ml-2">
+<p>{{aPerson}}</p>
+</div>

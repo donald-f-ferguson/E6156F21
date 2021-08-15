@@ -1,0 +1,117 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/cu_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    E6156: Cloud Computing
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li id="Home" [ngClass]="navBar.getClass('Home')">
+        <a  class="nav-link" href="#">Home</a>
+      </li>
+      <li id="People"  [ngClass]="navBar.getClass('People')">
+        <a  class="nav-link" href="/people">People</a>
+      </li>
+      <li id="Course"  [ngClass]="navBar.getClass('Course')">
+        <a  class="nav-link" href="/courses">Courses</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="jumbotron">
+  <!--
+  <h1 class="display-4">COMSE6156_001_2021_3 - TOPICS IN SOFTWARE ENGINEERING: <br>Cloud Computing
+  -->
+  <h1>COMSE6156_001_2021_3 - TOPICS IN SOFTWARE ENGINEERING: <br>Cloud Computing
+  </h1>
+</div>
+<div class="container-fluid ml-2">
+  <p>Courses works!</p>
+</div>
+<div class="container-fluid">
+    <div class="col">
+      <div class="card">
+        <div class="card" style="width: 48rem;">
+          <h5 class="card-header">Course Lookup and Information</h5>
+          <div class="card-header">
+            <form class="form-inline">
+              <div class="form-group mb-2">
+                <label for="courseIdStatic" class="sr-only">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="courseIdStatic"
+                        value="Course ID">
+              </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label class="sr-only" for="courseID">Course ID</label>
+              <input type="text" class="form-control" id="courseID" placeholder="Course ID"
+                     [(ngModel)]="courseId" name="cool">
+            </div>
+            <button type="submit" (click)="getCourseByID(courseId)" class="btn btn-primary mb-2">Look Up</button>
+            </form>
+          </div>
+          <div class="card-body" *ngIf="course">
+            <h5 class="card-title">Course Information</h5>
+            <table class="table">
+              <thead>
+              <tr>
+                <th scope="col">Property</th>
+                <th scope="col">Value</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">ID</th>
+                <td>{{course.id}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Name</th>
+                <td>{{course.name}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Course Number</th>
+                <td>{{course.course_no}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Course Title</th>
+                <td>{{course.course_title}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Course Section</th>
+                <td>{{course.section}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Year</th>
+                <td>{{course.year}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Semester</th>
+                <td>{{course.semester}}</td>
+              </tr>
+              </tbody>
+            </table>
+            <a href="#" class="btn btn-primary">Details, e.g. students</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

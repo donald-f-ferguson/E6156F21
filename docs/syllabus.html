@@ -103,21 +103,36 @@
     </div>
 
     <div class="row">
-        <div class="col-1" align="center">
+        <div class="col" align="left">
+            <h5>Lecture Schedule</h5>
+            <p>
+                Lectures can cover material and concepts much faster than students can realize in their project
+                development. So, the class will have the following cadence for lectures:
+                <ul>
+            <li>Two weeks of lectures introducing topics and technology.</li>
+            <li>One week using the lecture session to discuss and review projects, resolve issues, etc.</li>
+
+        </ul>
+            <p>
+                Previous experience in the course suggests that the schedule below is likely to change.
+                <ul>
+                    <li>Student interests, questions and issues cause reordering.</li>
+                    <li>Students get stuck on certain concepts in projects.</li>
+                </ul>
+            </p>
             <table style="height: 171px; width: 1200px;" border="2" cellspacing="2">
                 <tbody>
                 <tr style="height: 21px;">
                     <td style="width: 100px; height: 21px;"><strong>Lecture No.</strong></td>
                     <td style="width: 100px; height: 21px;"><strong>Date</strong></td>
                     <td style="width: 600px; height: 21px;"><strong>Topics</strong></td>
-                    <td style="width: 300px; height: 21px;"><strong>Project Reviews/Checkpoints</strong>
                     </td>
                 </tr>
                 <tr style="height: 91px;">
                     <td style="width: 100px; height: 91px;">1</td>
                     <td style="width: 100px; height: 91px;">10-Sep</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Introduction, Course Overview, Foundational Concepts, IaaS</b>
+                        <p><b>Introduction, Course Overview, Foundational Concepts</b>
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-1"
                                     aria-expanded="true" aria-controls="collapse1">
                                 <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
@@ -129,23 +144,20 @@
                                 <li>Course overview, project, grading, logistics, ...
                                 <li>Technical Topics</li>
                                 <ul>
-                                    <li>IaaS: server, storage, networking.</li>
+                                    <li>IaaS: server, storage, networking (EC2)</li>
                                     <li>Basic security and networking concepts.</li>
                                     <li>Introduction to REST, microservices, web applications.</li>
+                                    <li>Full stack web applications.</li>
                                 </ul>
                             </ul>
                         </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <ul>
-                        </ul>
                     </td>
                 </tr>
                 <tr style="height: 91px;">
                     <td style="width: 100px; height: 91px;">2</td>
                     <td style="width: 100px; height: 91px;">17-Sep</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Basic Scalability, Databases-as-a-Service, APIs</b>
+                        <p><b>Platform-as-a-Service, REST</b>
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-2"
                                     aria-expanded="true" aria-controls="collapse1">
                                 <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
@@ -154,21 +166,30 @@
                         <div id="collapse-2" class="collapse" aria-labelledby="heading2">
                             <!-- data-parent="#accordion"> -->
                             <ul>
+                                <li>Microservices.</li>
                                 <li>Elastic Load Balancing.</li>
+                                <li>Elastic Beanstalk.</li>
+                                <li>Docker, containers, Elastic Container Service.</li>
                                 <li>Scale-up vs Scale-out.</li>
                                 <li>APIs and API Gateway.</li>
-                                <li>Using APIs.</li>
+                                <li>REST design principles.</li>
                             </ul>
                         </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
                     </td>
                 </tr>
                 <tr style="height: 91px;">
                     <td style="width: 100px; height: 91px;">3</td>
                     <td style="width: 100px; height: 91px;">24-Sep</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>DNS/Certificates, CloudFront/CDN, Static Web Sites</b>
+                        <p><b>Project Reviews and Discussions.</b>
+
+                    </td>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">4</td>
+                    <td style="width: 100px; height: 91px;">01-Oct</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>DNS/Certificates, CloudFront/CDN, Static Web Sites, OAuth2</b>
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-3"
                                     aria-expanded="true" aria-controls="collapse1">
                                 <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
@@ -180,22 +201,20 @@
                                 <li>Basic web architecture (certificates, DNS, ...).</li>
                                 <li>CloudFront, single site image.</li>
                                 <li>S3 overview and static web sites.</li>
+                                <li>IAM, OAuth2, Cognito, security concepts.</li>
                             </ul>
                                 <ul>
                                 </ul>
                             </ul>
                         </div>
                     </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                        </p>
-                    </td>
                 </tr>
                 <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;">4</td>
-                    <td style="width: 100px; height: 91px;">01-Oct</td>
+                    <td style="width: 100px; height: 91px;">5</td>
+                    <td style="width: 100px; height: 91px;">08-Oct</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Federate Security/OAuth, Two-Factor Authentication, API GW Authorization</b>
+                        <p><b>Lamba Functions, Two-Factor Authentication, Email/Notification,
+                            API GW Authorization</b>
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-4"
                                     aria-expanded="true" aria-controls="collapse1">
                                 <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
@@ -204,23 +223,27 @@
                         <div id="collapse-4" class="collapse" aria-labelledby="heading2">
                             <!-- data-parent="#accordion"> -->
                             <ul>
-                                <li>Security concepts.</li>
-                                <li>OAuth2, Federated Identity.</li>
+                                <li>Function-as-a-Service (Lambda Functions)</li>
+                                <li>Simple Email Service, device notification.</li>
                                 <li>API Gateway Authorization.</li>
+                                <li>Continuing security concepts.</li>
                             </ul>
                         </div>
                     </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">6</td>
+                    <td style="width: 100px; height: 91px;">15-Oct</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Project Reviews and Discussions.</b>
 
-                        </p>
                     </td>
                 </tr>
                 <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;">5</td>
-                    <td style="width: 100px; height: 91px;">08-Oct</td>
+                    <td style="width: 100px; height: 91px;">7</td>
+                    <td style="width: 100px; height: 91px;">22-Oct</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Platform-as-a-Service, Basic Pub/Sub, CI/CD</b>
+                        <p><b>Publish/Subscribe, Message Driver Processing, Workflow/Service Orchestration</b>
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-5"
                                     aria-expanded="true" aria-controls="collapse1">
                                 <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
@@ -229,22 +252,18 @@
                         <div id="collapse-5" class="collapse" aria-labelledby="heading2">
                             <!-- data-parent="#accordion"> -->
                             <ul>
-                                <li>Platform-as-a-Service Concepts, Elastic Beanstalk.</li>
+                                <li>Message Driven Processing, Simple Message Service</li>
                                 <li>Pub/Sub concepts, Simple Notification Service, WebHooks.</li>
-                                <li>Basic Continuos Integration/Continuous Delivery, AWS Pipelines.</li>
+                                <li>Step Functions</li>
                             </ul>
                         </div>
                     </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                        </p>
-                    </td>
                 </tr>
                 <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;">6</td>
-                    <td style="width: 100px; height: 91px;">15-Oct</td>
+                    <td style="width: 100px; height: 91px;">8</td>
+                    <td style="width: 100px; height: 91px;">29-Oct</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Containers, Container-as-a-Service, Docker</b>
+                        <p><b>No SQL Databases</b>
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-6"
                                     aria-expanded="true" aria-controls="collapse1">
                                 <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
@@ -253,248 +272,86 @@
                         <div id="collapse-6" class="collapse" aria-labelledby="heading2">
                             <!-- data-parent="#accordion"> -->
                             <ul>
-                                <li>Containers, containers versus VMs.</li>
-                                <li>Docker overview.</li>
-                                <li>Container-as-a-Service.</li>
-                                <li>Development processes and flows.</li>
+                                <li>Concepts.</li>
+                                <li>DynamoDB.</li>
+                                <li>DB Scalability Concepts.</li>
+                                <li>Consistency Models.</li>
                             </ul>
                         </div>
                     </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                        </p>
-                    </td>
                 </tr>
                 <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;">7</td>
-                    <td style="width: 100px; height: 91px;">26-Feb</td>
+                    <td style="width: 100px; height: 91px;">9</td>
+                    <td style="width: 100px; height: 91px;">05-Nov</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Data Storage, Indexes, Query Processing, Transactions</b>
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-26-Feb"
-                                    aria-expanded="true" aria-controls="collapse1">
-                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
-                            </button>
-                        </p>
-                        <div id="collapse-26-Feb" class="collapse" aria-labelledby="heading2">
-                            <!-- data-parent="#accordion"> -->
-                            <ul>
-                                <li>Topics</li>
-                                <ul>
-                                    <li>Data storage media, formats and data structures.</li>
-                                    <li>Indexes.</li>
-                                    <li>Query processing.</li>
-                                    <li>Transactions, isolation/currency control, recover.</li>
-                                </ul>
-                                <li>Reference material: Subset of material in chapters 12-19.</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                            Take home midterm due.<br>
-                            Proctored midterm quiz.
-                        </p>
-                    </td>
-                </tr>
-                <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;">NA</td>
-                    <td style="width: 100px; height: 91px;">05-Mar</td>
-                    <td style="width: 600px; height: 91px;">
-                        <p><b>No class. Spring break.</b>
-                        </p>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                        </p>
-                    </td>
-                </tr>
-                <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;">8</td>
-                    <td style="width: 100px; height: 91px;">12-Mar</td>
-                    <td style="width: 600px; height: 91px;">
-                        <p><b>No SQL, Cloud Databases (1)</b>
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-12-Mar"
-                                    aria-expanded="true" aria-controls="collapse1">
-                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
-                            </button>
-                        </p>
-                        <div id="collapse-12-Mar" class="collapse" aria-labelledby="heading2">
-                            <!-- data-parent="#accordion"> -->
-                            <ul>
-                                 <li>Topics</li>
-                                <ul>
-                                    <li>No SQL concepts and motivation.</li>
-                                    <li>CAP "Theorem". Consistency, eventual consistency.</li>
-                                    <li>Scale-up versus Scale-out.</li>
-                                    <li>Graph databases, Neo4j.</li>
-                                </ul>
-                                <li>Reference material:</li>
-                                <ul>
-                                    <li>TBD</li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                            Homework 3 assigned.<br>
-                        </p>
-                    </td>
-                </tr>
-                <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;"></td>
-                    <td style="width: 100px; height: 91px;">19-Mar</td>
-                    <td style="width: 600px; height: 91px;">
-                        <p><b>No SQL, Cloud Databases (2)</b>
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-19-Mar"
-                                    aria-expanded="true" aria-controls="collapse1">
-                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
-                            </button>
-                        </p>
-                        <div id="collapse-19-Mar" class="collapse" aria-labelledby="heading2">
-                            <!-- data-parent="#accordion"> -->
-                            <ul>
+                        <p><b>Project Reviews and Discussions.</b>
 
-                                <li>Topics</li>
-                                <ul>
-                                    <li>Document databases, MongoDB, DynamoDB.</li>
-                                    <li>Key Value stores: Redis.</li>
-                                    <li>Time Series Databases.</li>
-                                </ul>
-                                <li>Reference material: Database Systems Concepts (Silberschatz)</li>
-                                <ul>
-                                    <li>TBD</li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                        </p>
                     </td>
                 </tr>
                 <tr style="height: 91px;">
                     <td style="width: 100px; height: 91px;">10</td>
-                    <td style="width: 100px; height: 91px;">26-Mar</td>
+                    <td style="width: 100px; height: 91px;">12-November</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Big, Analytics, Data Insight (I)</b>
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-26-Mar"
+                        <p><b>Using Cloud Services</b>
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-10"
                                     aria-expanded="true" aria-controls="collapse1">
                                 <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
                             </button>
                         </p>
-                        <div id="collapse-26-Mar" class="collapse" aria-labelledby="heading2">
+                        <div id="collapse-10" class="collapse" aria-labelledby="heading2">
                             <!-- data-parent="#accordion"> -->
                             <ul>
-
-                                <li>Topics</li>
-                                <ul>
-                                    <li>Topics</li>
-                                    <ul>
-                                        <li>Data warehouse, data lake.</li>
-                                        <li>OLAP, Star schema.</li>
-                                    </ul>
-                                    <li>Reference material:</li>
-                                    <ul>
-                                        <li>TBD</li>
-                                    </ul>
-                                </ul>
+                                <li>API Economy.</li>
+                                <li>Address Verification.</li>
+                                <li>Payment Services.</li>
+                                <li>etc.</li>
                             </ul>
                         </div>
                     </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                            Homework 3 due.<br>
-                            Homework 4 assigned.
+                </tr>
+                <tr style="height: 91px;">
+                    <td style="width: 100px; height: 91px;">11</td>
+                    <td style="width: 100px; height: 91px;">19-Nov</td>
+                    <td style="width: 600px; height: 91px;">
+                        <p><b>Systems and Application Management, CI/CD</b>
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-11"
+                                aria-expanded="true" aria-controls="collapse1">
+                            <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
+                        </button>
                         </p>
+                        <div id="collapse-11" class="collapse" aria-labelledby="heading2">
+                            <!-- data-parent="#accordion"> -->
+                            <ul>
+                                <li>Miscellaneous topics in system and application management.</li>
+                                <li>Miscellaneous concepts in application development.</li>
+                                <li>Design patterns.</li>
+                                <li>etc.</li>
+                            </ul>
+                        </div>
                     </td>
                 </tr>
                 <tr style="height: 91px;">
                     <td style="width: 100px; height: 91px;">12</td>
-                    <td style="width: 100px; height: 91px;">02-Apr</td>
+                    <td style="width: 100px; height: 91px;">26-Nov</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Big Data, Data Insight (II)</b>
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-02-Apr"
-                                    aria-expanded="true" aria-controls="collapse1">
-                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
-                            </button>
-                        </p>
-                        <div id="collapse-02-Apr" class="collapse" aria-labelledby="heading2">
-                            <!-- data-parent="#accordion"> -->
-                            <ul>
-
-                                <li>Topics</li>
-                                <ul>
-                                    <li>MapReduce, Hadoop.</li>
-                                    <li>Apache Spark, AWS Glue.</li>
-                                    <li>Mode</li>
-                                </ul>
-                                <li>Reference material:</li>
-                                <ul>
-                                    <li>TBD</li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
+                        <p><b>No Class (Thanksgiving)</b>
                         </p>
                     </td>
                 </tr>
                 <tr style="height: 91px;">
                     <td style="width: 100px; height: 91px;">13</td>
-                    <td style="width: 100px; height: 91px;">09-Apr</td>
+                    <td style="width: 100px; height: 91px;">03-Dec</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>Overvflow, miscellaneous topics.</b>
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-09-Apr"
-                                    aria-expanded="true" aria-controls="collapse1">
-                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
-                            </button>
-                        </p>
-                        <div id="collapse-09-Apr" class="collapse" aria-labelledby="heading2">
-                            <!-- data-parent="#accordion"> -->
-                            <ul>
-
-                                <li>Topics</li>
-                                <ul>
-                                   TBD
-                                </ul>
-                                <li>Reference material</li>
-                                <ul>
-                                    <li>TBD</li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                        Homework 4 due.<br>
-                        Take home final released.
+                        <p><b>Project reviews and discussions.</b>
                         </p>
                     </td>
                 </tr>
                 <tr style="height: 91px;">
-                    <td style="width: 100px; height: 91px;">NA</td>
-                    <td style="width: 100px; height: 91px;">16-Apr</td>
+                    <td style="width: 100px; height: 91px;">14</td>
+                    <td style="width: 100px; height: 91px;">10-Dec</td>
                     <td style="width: 600px; height: 91px;">
-                        <p><b>NA</b>
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-16-Apr"
-                                    aria-expanded="true" aria-controls="collapse1">
-                                <i class="fa fa-plus-square" style="font-size:18px;color:black"></i>
-                            </button>
-                        </p>
-                        <div id="collapse-16-Apr" class="collapse" aria-labelledby="heading2">
-                            <!-- data-parent="#accordion"> -->
-                            <ul>
-                                <li>NA.</li>
-                            </ul>
-                        </div>
-                    </td>
-                    <td style="width: 300px; height: 91px;">
-                        <p>
-                            Approximate time for proctored final.<br>
-                            Take home final due.
-                        </p>
+                    <p><b>Overflow.</b>
+                    </p>
                     </td>
                 </tr>
                 </tbody>

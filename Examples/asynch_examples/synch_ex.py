@@ -1,3 +1,5 @@
+# Copied from https://realpython.com/async-io-python/
+
 import time
 
 def count():
